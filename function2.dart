@@ -3,6 +3,8 @@ void main(List<String> args) {
     return 'hello';
   }
 
+  namedRequired(x: 5, y: 3.3, greeting: 'Hi');
+  namedOptional(a: 10, b: 12.6, greeting: 'Superb');
   otherFunction();
   params(10, 5.5, 'hi');
   print(returnStringNested());
@@ -18,13 +20,35 @@ void otherFunction() {
 }
 
 void params(int x, double y, String gretting) {
-  
   print("$x +$y =${x + y}");
 }
 
 void optionalParams(int x, double y, {String? greetings}) {
   print("$x +$y =${x + y} $greetings");
 }
+
+void namedOptional({
+  int? a,
+  double? b,
+  String?
+      greeting, // you can also add a default vlaue for the parameter String greeting = hi
+}) {
+  print("${a!} + ${b!}= ${a + b},$greeting");
+}
+
+void namedRequired(
+    {required int x, required double y, required String greeting}) {
+  namedRequired(x: 5, y: 3.3, greeting: 'Hi');
+  print("$x + $y = ${x + y}, $greeting");
+}
+
+
+
+
+
+
+
+
 
 // void main(List<String> args) {
 //   // Call returnStringNested() and print its result
