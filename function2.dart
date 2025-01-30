@@ -38,7 +38,7 @@ void namedOptional({
 
 void namedRequired(
     {required int x, required double y, required String greeting}) {
-  namedRequired(x: 5, y: 3.3, greeting: 'Hi');
+  
   print("$x + $y = ${x + y}, $greeting");
 }
 
