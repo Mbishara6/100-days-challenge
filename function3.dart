@@ -1,14 +1,21 @@
 void main(List<String> arguments) {
-  final twicePlus = twice((x){
-  return x +5;
-  });
-  
+  // int plus(int x) {
+  //   return x + 5;
+  // }
+
+  final twicePlus = twice((x) => x + 5);
+
   final result = twicePlus(3);
 
   print(result);
 }
 
-int Function(int) twice(Function(int) f) {
+//  typedef :It allows you to define a custom name for a
+//function signature so that you can use that
+//name wherever a function of that type is required.
+typedef intTransformer = int Function(int);
+
+intTransformer twice(intTransformer f) {
   return (int x) {
     return f(f(x));
   };
