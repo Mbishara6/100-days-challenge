@@ -57,7 +57,7 @@ void main(List<String> args) {
     year += 1;
   }
 
-  bool condition = true;
+  // bool condition = true;
   while (false == false || true == false || false == true || true == true ) {
     print("fasle");
     break;
