@@ -18,5 +18,8 @@ void main(List<String> args) {
       print("100 USDT");
       break;
 
+      //The default case is removed because all the possible enum values
+      // (pending, completed, failed) are already covered in the cases.
+
   }
 }
