@@ -6,7 +6,7 @@
 enum AccountType { free, premium, vip }
 
 void main(List<String> args) {
-  final userAccountType = AccountType.vip;
+  const userAccountType = AccountType.vip;
   print(userAccountType.index);
   AccountType.values[1];
 
