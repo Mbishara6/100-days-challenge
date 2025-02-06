@@ -1,3 +1,8 @@
+//enum is a data type that allows you to define a set of named constants.
+//It's used for grouping related constants together and helps with 
+//type safety, readability, and maintaina
+
+
 enum AccountType { free, premium, vip }
 
 void main(List<String> args) {
