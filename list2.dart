@@ -1,15 +1,27 @@
 void main(List<String> args) {
-  final names = ['Bishara', 'Muhammad', 'Umar'];
+  final names = ['Bishara', 'Hafsy', 'Umar'];
 
   final List<String> namesFilered =
       names.map<String>((String name) => name.toString()).toList();
   print(namesFilered[0]);
+
   final where = names.where((name) => name.length == 7).toList();
   print(where);
 
   for (int i = 0; i < namesFilered.length; i++) {
     print(names[i]);
   }
+
+  namesFilered.forEach(print);
+
+  
+  final name = ['Bishara', 'Muhammad', 'Umar'];
+
+  // Map names to their lengths
+  final nameLengths = names.map((name) => name.length).toList();
+
+  print(nameLengths); // Output: [7, 8, 4]
+
 
   final numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 
@@ -18,12 +30,6 @@ void main(List<String> args) {
 
   print(evenNumbers); // Output: [2, 4, 6, 8]
 
-  final name = ['Bishara', 'Muhammad', 'Umar'];
-
-  // Map names to their lengths
-  final nameLengths = names.map((name) => name.length).toList();
-
-  print(nameLengths); // Output: [7, 8, 4]
 
   final number = [1, 2, 3, 4, 5, 6, 7, 8];
 
