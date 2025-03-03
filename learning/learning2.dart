@@ -46,7 +46,7 @@ void main(List<String> args) {
   print(isEqual);
 
   // String concatiantion
-  String my = 'hello' ' world ' + isEqual.toString();
+  String my = 'hello world $isEqual';
   print(my);
 
   // String Interpolation
